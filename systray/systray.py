@@ -78,7 +78,7 @@ class Systray(BaseComponent):
 
     def _blame_cube(self):
         """
-        Plays a sound file using the Windows API every minute.
+        Plays a sound file using the Windows API every 10 minutes.
         """
         while True:
             winsound.PlaySound(self._path_wav_1, winsound.SND_FILENAME)
